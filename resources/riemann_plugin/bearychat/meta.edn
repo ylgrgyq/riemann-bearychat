@@ -1,0 +1,4 @@
+{:plugin "bearychat"
+ :title  "riemann output plugin for bearychat"
+ :git-repo "https://bearychat.com"
+ :require riemann.bearychat}
