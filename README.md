@@ -1,10 +1,22 @@
 # riemann-bearychat
 
-Sending your riemann event to bearychat.com.
+A riemann output plugin for sending riemann event to bearychat.com.
 
 ## Usage
 
+In /etc/riemann.config
 
+```
+(load-plugins)
+
+(let [webhook_uri         ; webhook from bearychat
+      markdown true       ; weather support markdown format
+      channel             ; bearychat channel used for sending message to different group
+      formatter           ; a function to transfer riemann event to bearychat param
+      bearychat-sender (bearychat/bearychat webhook_uri :markdown markdown :channel channel :formatter formatter)]
+  (streams
+    bearychat-sender))
+```
 
 ## Installing
 
