@@ -4,7 +4,7 @@ A riemann output plugin for sending riemann event to bearychat.com.
 
 ## Usage
 
-In /etc/riemann.config
+In etc/riemann.config
 
 ```
 (load-plugins)
